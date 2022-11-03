@@ -1,19 +1,7 @@
-tinhdh@tinhdh:~/Desktop/DevOps_Microservices_Udacity$ ./run_kubernetes.sh
-error: failed to create deployment: deployments.apps "tinhdh-udacity-app" already exists
-NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/tinhdh-udacity-app   1/1     1            1           3h16m
-
-NAME                                            DESIRED   CURRENT   READY   AGE
-replicaset.apps/tinhdh-udacity-app-5bcfd7f6c9   1         1         1       3h16m
-
-NAME                                  TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
-service/kubernetes                    ClusterIP   10.96.0.1        <none>        443/TCP   17h
-service/tinhdh-udacity-http-service   ClusterIP   10.103.122.144   <none>        80/TCP    3h13m
-
-NAME                                      READY   STATUS    RESTARTS   AGE
-pod/tinhdh-udacity-app-5bcfd7f6c9-q5w5v   1/1     Running   0          3h16m
-Error from server (AlreadyExists): services "tinhdh-udacity-http-service" already exists
-Forwarding from 127.0.0.1:8089 -> 80
-Forwarding from [::1]:8089 -> 80
-Handling connection for 8089
-Handling connection for 8089
+tinhdh@tinhdh:~/Desktop/DevOps_Microservices_Udacity$ ./make_prediction.sh
+Port: 8089
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
